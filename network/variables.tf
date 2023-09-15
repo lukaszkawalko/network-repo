@@ -23,12 +23,9 @@ variable "environment" {
   }
 }
 
-variable "project_prefix" {
+variable "prefix" {
   type        = string
   description = "Project prefix"
 
-  validation {
-    condition     = length(var.project_prefix) == 3
-    error_message = "Project prefix must be 3 characters long"
-  }
+  
 }

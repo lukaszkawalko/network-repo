@@ -1,6 +1,6 @@
 module "naming" {
   source = "Azure/naming/azurerm"
-  prefix = [var.project_prefix]
+  prefix = [var.prefix]
   suffix = [var.environment]
 }
 

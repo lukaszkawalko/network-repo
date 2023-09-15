@@ -1,7 +1,7 @@
 module "naming" {
   source = "Azure/naming/azurerm"
   prefix = [var.project_prefix]
-  suffix = [var.environment, "tf"]
+  suffix = [var.environment]
 }
 
 locals {
